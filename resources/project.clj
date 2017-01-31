@@ -36,8 +36,10 @@
                                                                    :main          "env.ios.main"
                                                                    :output-dir    "target/ios"
                                                                    :static-fns    true
+                                                                   :preamble ["react/react.js"]
+                                                                   :externs ["react/externs/react.js"]
                                                                    :optimize-constants true
-                                                                   :optimizations :simple
+                                                                   :optimizations :none
                                                                    :closure-defines {"goog.DEBUG" false}}}
                                                    {:id            "android"
                                                     :source-paths ["src" "env/prod"]
@@ -46,5 +48,5 @@
                                                                    :output-dir    "target/android"
                                                                    :static-fns    true
                                                                    :optimize-constants true
-                                                                   :optimizations :simple
+                                                                   :optimizations :none
                                                                    :closure-defines {"goog.DEBUG" false}}}]}}})
