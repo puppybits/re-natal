@@ -37,7 +37,7 @@
                                                                    :output-dir    "target/ios"
                                                                    :static-fns    true
                                                                    :optimize-constants true
-                                                                   :optimizations :simple
+                                                                   :optimizations :none
                                                                    :closure-defines {"goog.DEBUG" false}}}
                                                    {:id            "android"
                                                     :source-paths ["src" "env/prod"]
@@ -46,5 +46,5 @@
                                                                    :output-dir    "target/android"
                                                                    :static-fns    true
                                                                    :optimize-constants true
-                                                                   :optimizations :simple
+                                                                   :optimizations :none
                                                                    :closure-defines {"goog.DEBUG" false}}}]}}})
